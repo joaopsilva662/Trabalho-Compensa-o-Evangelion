@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Neon Genesis Evangelion</title>
+  </head>
+  <body class="bg-zinc-800">
+    <header
+      class="w-full min-h-[50px] flex flex-row justify-between items-center bg-violet-900 pl-2 pr-2 shadow-md shadow-green-700"
+    >
+      <h1 class="text-white text-3xl font-bold">Neon Genesis Evangelion</h1>
+      <img src="./assets/nerv-logo.png" alt="nerv-logo" class="w-20 h-20" />
+    </header>
+    <nav class="flex flex-row items-center ml-2 space-x-2 my-2">
+      <a
+        href="#introducao"
+        class="text-white text-sm p-1 hover:text-violet-400 hover:no-underline transition-colors duration-200"
+        >INTRODUÇÃO</a
+      >
+      <a
+        href="#personagens"
+        class="text-white text-sm p-1 hover:text-violet-400 hover:no-underline transition-colors duration-200"
+        >PERSONAGENS</a
+      >
+      <a
+        href="#classico"
+        class="text-white text-sm p-1 hover:text-violet-400 hover:no-underline transition-colors duration-200"
+        >CLASSICO</a
+      >
+      <a
+        href="#rebiuld"
+        class="text-white text-sm p-1 hover:text-violet-400 hover:no-underline transition-colors duration-200"
+        >REBUILD</a
+      >
+    </nav>
+    <main class="m-4 mt-8 flex flex-col items-center justify-center text-white">
+      <section class="w-full mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div
+          class="bg-zinc-700 min-h-[200px] p-4 rounded-2xl shadow-md shadow-white"
+        >
+          <h2 class="font-semibold text-xl mb-2">CADASTRO</h2>
+          <form id="formCadastro" class="space-y-4">
+            <div
+              id="message"
+              class="text-red-500 w-full flex justify-center font-bold"
+            ></div>
+            <div>
+              <label
+                for="nome"
+                class="block text-sm font-semibold text-zinc-200"
+                >Nome</label
+              >
+              <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                class="bg-zinc-600 mt-1 w-full border border-zinc-500 rounded-lg px-3 py-2 text-white outline-none focus:border-violet-500"
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-semibold text-zinc-200"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email"
+                class="bg-zinc-600 mt-1 w-full border border-zinc-500 rounded-lg px-3 py-2 text-white outline-none focus:border-violet-500"
+              />
+            </div>
+            <button
+              type="submit"
+              id="submit-button"
+              class="mt-4 w-full bg-zinc-400 text-white py-2 rounded-lg hover:bg-violet-600 transition-all duration-300 cursor-pointer font-semibold"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div
+          class="bg-zinc-700 min-h-[200px] p-4 rounded-2xl shadow-md shadow-white"
+        >
+          <div>
+            <ul id="items"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="introducao"
+        class="bg-zinc-700 rounded-2xl p-4 shadow-md shadow-white w-full"
+      >
+        <h2 class="font-semibold text-xl">INTRODUÇÃO</h2>
+        <p class="pt-4">
+          Neon Genesis Evangelion é uma aclamada série de anime criada por Hideaki
+          Anno e produzida pelo estúdio Gainax. Ambientada na futurista cidade
+          de Tóquio-3 quinze anos após um cataclismo global conhecido como
+          "Segundo Impacto", a história acompanha a humanidade em sua luta
+          contra criaturas gigantescas conhecidas como "Anjos". Para
+          enfrentá-los, a organização NERV desenvolveu as Unidades Evangelion
+          (EVAs), bio-mechas gigantes controlados por adolescentes através de
+          uma ligação neural profunda.
+        </p>
+      </section>
+
+      <section
+        id="personagens"
+        class="mt-10 w-full min-h-[400px] bg-zinc-700 rounded-2xl shadow-md shadow-white p-4"
+      >
+        <h2 class="pb-4 font-semibold text-xl">PERSONAGENS</h2>
+        <section
+          class="mb-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
+        >
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/shinji.png"
+              alt="Shinji Ikari"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">SHINJI IKARI</h3>
+            <p>
+              A Terceira Criança e piloto da Unidade EVA-01. Shinji é um garoto
+              introvertido e traumatizado pela rejeição do pai, sendo forçado a
+              carregar a responsabilidade de salvar a humanidade enquanto luta
+              contra sua própria depressão e dilemas existenciais.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/asuka.png"
+              alt="Asuka Langley Soryu"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">ASUKA LANGLEY SORYU</h3>
+            <p>
+              A Segunda Criança e piloto da Unidade EVA-02. Nascida na Alemanha,
+              Asuka é extremamente orgulhosa, competitiva e impulsiva, usando
+              uma fachada de superioridade para esconder traumas de infância e
+              uma profunda necessidade de validação.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/ayanami.png"
+              alt="Rei Ayanami"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">REI AYANAMI</h3>
+            <p>
+              A Primeira Criança e piloto da Unidade EVA-00. Rei é uma garota
+              enigmática, inexpressiva e distante de emoções humanas normais.
+              Seu passado guarda um dos segredos centrais da NERV e do Projeto
+              de Instrumentalização Humana.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/misato.png"
+              alt="Misato Katsuragi"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">MISATO KATSURAGI</h3>
+            <p>
+              A Capitã (e posterior Major) de Operações Táticas da NERV e
+              guardiã legal de Shinji e Asuka. Apesar de sua atitude extroversa
+              em casa, é uma estrategista brilhante e determinada a destruir os
+              Anjos para vingar a morte de seu pai.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/gendo.png"
+              alt="Gendo Ikari"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">GENDO IKARI</h3>
+            <p>
+              O Comandante da NERV e pai frio de Shinji. Focado obsessivamente
+              na realização do Projeto de Instrumentalização Humana, Gendo
+              manipula aliados e inimigos com o único objetivo de se reencontrar
+              com sua falecida esposa, Yui.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/fuyutsuki.png"
+              alt="Kozo Fuyutsuki"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">KOZO FUYUTSUKI</h3>
+            <p>
+              O Vice-Comandante da NERV e braço direito de Gendo Ikari. Antigo
+              professor universitário de Yui e Gendo, Fuyutsuki atua como a voz
+              da razão na organização e conhece profundamente a verdade por trás
+              dos objetivos secretos da SEELE.
+            </p>
+          </div>
+        </section>
+
+        <h2 class="font-semibold text-xl">EVAS</h2>
+        <section
+          class="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
+        >
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/eva00.png"
+              alt="EVA 00"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">EVA 00</h3>
+            <p>
+              O protótipo da linha Evangelion, pilotado por Rei Ayanami. Por ser
+              o modelo inicial de testes, o EVA-00 é
+              instável e sofreu vários episódios de descontrole violento durante
+              seus primeiros testes.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/eva01.png"
+              alt="EVA 01"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">EVA 01</h3>
+            <p>
+              O modelo de teste de tipo único, pilotado por Shinji Ikari. Criado
+              a partir do Anjo Lilith, o EVA-01 possui um papel profético
+              central no Terceiro Impacto e exibe uma tendência assustadora de
+              entrar em estado "Berserk" para proteger seu piloto.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] rounded-2xl shadow-md shadow-white overflow-hidden p-4 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/eva02.png"
+              alt="EVA 02"
+              class="rounded-2xl w-full h-86 mx-auto object-cover shadow-md shadow-zinc-700"
+            />
+            <h3 class="pt-4 pb-4 font-semibold">EVA 02</h3>
+            <p>
+              O primeiro modelo de produção em massa concebido especificamente
+              para combate, pilotado por Asuka Langley. Projetado para otimizar
+              o uso do campo A.T. e armas táticas, representa o ápice da
+              engenharia militar da NERV na Europa.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section
+        id="classico"
+        class="mt-10 p-4 w-full min-h-[400px] bg-zinc-700 rounded-2xl shadow-md shadow-white"
+      >
+        <h2 class="pb-4 font-semibold text-xl">CLASSICO</h2>
+        <p>
+          A era clássica abrange a série original exibida na TV em 1995 com 26
+          episódios e o épico filme cinematográfico "The End of Evangelion"
+          (1997). Essa fase revolucionou a indústria dos animes ao misturar
+          ficção científica mecha com simbolismo religioso, psicanálise
+          freudiana e exploração profunda de depressão e alienação, culminating
+          em um dos finais mais icônicos da história da animação japonesa.
+        </p>
+        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="bg-zinc-600 min-h-[300px] max-h-[395px] rounded-2xl shadow-md shadow-white overflow-hidden transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/capa-anime.png"
+              alt="Capa da série clássica"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] max-h-[395px] rounded-2xl shadow-md shadow-white overflow-hidden transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/capa-filme0.png"
+              alt="Capa The End of Evangelion"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+      </section>
+
+      <section
+        id="rebiuld"
+        class="bg-zinc-700 mt-10 mb-10 p-4 w-full min-h-[400px] rounded-2xl shadow-md shadow-white"
+      >
+        <h2 class="pb-4 font-semibold text-xl">REBUILD</h2>
+        <p>
+          Lançada entre 2007 e 2021, a tetralogia cinematográfica "Rebuild of
+          Evangelion" (1.0, 2.0, 3.0 e 3.0+1.0) reimagina a franquia com
+          gráficos modernos e novos rumos na narrativa. Introduzindo novas
+          personagens como Mari Illustrious Makinami, alterações no enredo e uma
+          conclusão definitiva por Hideaki Anno, a quadrilogia encerra o ciclo
+          de Evangelion com uma mensagem de esperança e superação.
+        </p>
+        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="bg-zinc-600 min-h-[300px] max-h-[890px] rounded-2xl shadow-md shadow-white overflow-hidden transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/capa-filme1.png"
+              alt="Capa Rebuild 1.0"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="bg-zinc-600 min-h-[300px] max-h-[890px] rounded-2xl shadow-md shadow-white overflow-hidden transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+          >
+            <img
+              src="./assets/capa-filme2.png"
+              alt="Capa Rebuild 2.0"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer
+      class="w-full bg-violet-900 min-h-[80px] flex items-center justify-center"
+    >
+      <h1 class="text-zinc-400 text-sm">JOÃO PEDRO | TDS03 | ©2026</h1>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
